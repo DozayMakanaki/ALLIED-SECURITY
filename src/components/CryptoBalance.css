@@ -1,0 +1,29 @@
+/* src/components/CryptoBalance.css */
+.balance {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crypto-balance-heading {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.crypto-balance-text {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.bitcoin-logo {
+    margin-right: 0.5rem;
+}

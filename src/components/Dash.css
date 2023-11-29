@@ -1,0 +1,68 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.toggle-button,
+.nav-links {
+    display: none;
+}
+
+.toggle-button {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    background: #333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav-links a {
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+    background: #f5f8ff;
+}
+
+.title {
+    margin: 2em;
+    text-align: center;
+}
+
+.title a {
+    color: var(--primary);
+    margin-left: 0.5em;
+}
+
+.crypto-prices {
+    color: #333;
+}
+
+.crypto-prices img {
+    width: 2em;
+}
+
+.crypto-prices table {
+    width: 90%;
+    max-width: 1100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background-color: #f5f8ff;
+}
+
+.crypto-prices th {
+    text-align: left;
+    background-color: antiquewhite;
+}
+
+.crypto-prices th,
+.crypto-prices td {
+    padding: 1em;
+    border: 1px solid ivory;
+}
+
+.coin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.coin small {
+    text-transform: uppercase;
+    color: darkgrey;
+}
+
+.crypto-prices thead {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.crypto-prices tr:nth-child(odd) {
+    background-color: #f5f8ff;
+}
+
+.crypto-prices th:first-child,
+.crypto-prices td:first-child {
+    text-align: center;
+}
+
+.rising {
+    color: var(--primary);
+}
+
+.falling {
+    color: red;
+}
+
+.pagination {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.pagination button {
+    padding: 0.7em 1.7em;
+    font-size: 1.1em;
+    background-color: #f5f8ff;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.pagination button:hover {
+    background-color: #f5f8ff;
+}
+
+.chart {
+    color: #f5f8ff;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .crypto-prices table {
+        max-width: 100%;
+        /* Set your desired max-width here */
+        width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagination button {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* Media Query for iPhone 8 */
+@media screen and (max-width: 375px) {
+    .crypto-prices table {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagination button {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
