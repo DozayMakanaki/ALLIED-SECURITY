@@ -5,7 +5,7 @@ import BTC from '../assets/btc-img.png';
 import './CryptoBalance.css';
 
 const CryptoBalance = () => {
-  const [balance, setBalance] = useState(21375080);
+  const [balance, setBalance] = useState(150000);
   const [bitcoinEquivalent, setBitcoinEquivalent] = useState(null);
 
   useEffect(() => {
